@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit-Brust</title>
+    <!-- This is a css nad daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- This is a google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awusam -->
+    <script src="https://kit.fontawesome.com/9e134b03f6.js" crossorigin="anonymous"></script>
+
+    <!-- this is a color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'komola-bg': '#F85559',
+
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="lato">
+
+    <header class="container mx-auto mt-10">
+
+        <nav class="">
+            <div class="navbar  bg-[#F85559] rounded-full lg:h-28 ">
+                <div class="navbar-start">
+                    <ul class="menu menu-horizontal px-10 text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                    <img src="./images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-3xl text-white">Fruit Burst</a>
+                </div>
+
+                <div class="navbar-end border-2 lg: w-56 bg-white rounded mx-52 ">
+                    <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main class="container mx-auto mt-10">
+        <!-- this is carosel -->
+        <section>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="relative">
+                        <img src="./images/banner1.png" class="w-full" />
+
+                        <div
+                            class="font-extrabold text-center lg: items-center absolute mt-[-350px] ml-[450px] text-white p-10">
+                            <h1 class="text-4xl ">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p class="text-xs mt-5">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] text-white mt-5">Shop Now</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+
+                </div>
+
+                <div id="slide2" class="carousel-item relative w-full">
+
+                    <div class="relative">
+                        <img src="./images/banner2.png" class="w-full" />
+
+                        <div
+                            class="font-extrabold text-center lg: items-center absolute mt-[-350px] ml-[450px] text-white p-10">
+                            <h1 class="text-4xl ">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p class="text-xs mt-5">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] text-white mt-5">Shop Now</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+
+                    <div class="relative">
+                        <img src="./images/banner3.png" class="w-full" />
+
+                        <div
+                            class="font-extrabold text-center lg: items-center absolute mt-[-350px] ml-[450px] text-white p-10">
+                            <h1 class="text-4xl ">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p class="text-xs mt-5">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] text-white mt-5">Shop Now</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+
+                    <div class="relative">
+                        <img src="./images/banner4.png" class="w-full" />
+
+                        <div
+                            class="font-extrabold text-center lg: items-center absolute mt-[-350px] ml-[450px] text-white p-10">
+                            <h1 class="text-4xl ">Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p class="text-xs mt-5">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] text-white mt-5">Shop Now</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" ">
+            <div class="grid grid-cols-1  lg:flex justify-center gap-16 bg-white relative w-[1192px] 
+              h-[250px] mt-[-60px] ml-[38px] shadow-xl	items-center">
+                <div class=""><img src="./images/fruit1.png" alt="">
+                    <p class="ml-8">Strawberry</p>
+                </div>
+
+                <div class=""><img src="./images/fruit2.png" alt="">
+                    <p class="ml-8">Orange</p>
+                </div>
+
+                <div class=""><img src="./images/fruit3.png" alt="">
+                    <p class="ml-8">Mango</p>
+                </div>
+
+                <div class=""><img src="./images/fruit4.png" alt="">
+                    <p class="ml-8">Strawberry</p>
+                </div>
+
+                <div class=""><img src="./images/fruit5.png" alt="">
+                    <p class="ml-8">Mango</p>
+                </div>
+            </div>
+            <div class=" mt-[100px] flex justify-between">
+
+                <div class="">
+                    <h1 class="text-3xl font-extrabold">Deal of the day</h1>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                        Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="">
+
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl font-extrabold">
+                                <span style="--value:19 ;"></span>
+                            </span>
+                            :
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl font-extrabold">
+                                <span style="--value:15; "></span>
+                            </span>
+                            :
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl font-extrabold">
+                                <span style="--value:25;" >
+                                    
+                                </span>
+                            </span>
+                            :
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl font-extrabold">
+                                <span style="--value:08 ;"></span>
+                            </span>
+                            :
+                            sec
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+    </main>
+
+    <footer class="">
+
+
+    </footer>
+
+</body>
+
+</html>
